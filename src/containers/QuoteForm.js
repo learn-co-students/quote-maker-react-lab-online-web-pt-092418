@@ -23,8 +23,8 @@ class QuoteForm extends Component {
   handleSubmit = event => {
     // Handle Form Submit event default
     event.preventDefault();
-    // Create quote object from state
-    const quote = Object.assign({}, this.state, { id: uuid() })
+    // Create new instance of a quote object from state
+    const quote = {...this.state, id: uuid() };
     // Pass quote object to action creator
     this.props.addQuote(quote)
     // Update component state to return to default state
