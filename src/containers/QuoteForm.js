@@ -11,20 +11,15 @@ class QuoteForm extends Component {
   }
 
   handleOnChange = event => {
-
-    let key = event.target.name
-    let value = event.target.value
-    // debugger
     this.setState({
-      [key]: value
+      [event.target.name]: event.target.value
     })
-
   }
 
   handleOnSubmit = event => {
     event.preventDefault();
     let quote = {...this.state, id: uuid()};
-    debugger
+    // debugger
     this.props.addQuote(quote);
     this.setState({
       content: '',
