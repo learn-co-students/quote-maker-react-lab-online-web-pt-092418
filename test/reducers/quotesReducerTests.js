@@ -32,7 +32,8 @@ describe('Quotes Reducer', () => {
         content: 'Moral indignation is jealousy with a halo.',
         author: 'H.G. Wells',
         votes: 0
-      }, {
+      },
+      {
         id: secondId,
         content: 'The artist is nothing without the gift, but the gift is nothing without work.',
         author: 'Emile Zola',
