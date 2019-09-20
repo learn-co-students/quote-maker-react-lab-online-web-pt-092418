@@ -1,11 +1,11 @@
 import React from 'react';
 
-const QuoteCard = (props) =>
+const QuoteCard = ({quote, removeQuote, upvoteQuote, downvoteQuote}) =>
   <div>
     <div className="card card-inverse card-success card-primary mb-3 text-center">
       <div className="card-block">
         <blockquote className="card-blockquote">
-          {/* <p>{Render Quote Content}</p> */}
+          <p>{quote.content}</p>
           {/* <footer>- author <cite title="Source Title">{Render Quote Author}</cite></footer> */}
         </blockquote>
       </div>
